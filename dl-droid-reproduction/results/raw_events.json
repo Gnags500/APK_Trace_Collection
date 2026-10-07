@@ -1,0 +1,2432 @@
+[
+  {
+    "timestamp": 1791403278132,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403278133,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403278187,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278187,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278197,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278220,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278221,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278241,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278242,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278258,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278259,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278316,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403278316,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403278426,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278427,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403278428,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403278430,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278432,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278506,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278507,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278509,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278527,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278530,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278531,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278596,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278597,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403278598,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279149,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403279160,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279160,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279162,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403279316,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279329,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279330,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279332,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403279620,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279638,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279638,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279639,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279641,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279649,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279651,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279654,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403279655,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279658,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403279659,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403279738,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279744,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279752,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279759,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279767,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279769,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279770,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279778,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279779,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279780,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279781,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279782,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279782,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279783,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279785,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279789,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279790,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279792,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279796,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279798,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279803,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279810,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279812,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279813,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279819,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279832,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403279835,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279839,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279846,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403279854,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403280030,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280033,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280039,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280040,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280041,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280053,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403280054,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403280059,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280073,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280075,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280078,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280079,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280080,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280101,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280103,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280105,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280108,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280109,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280109,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280110,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280157,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280157,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280158,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280160,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403280940,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280941,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403280945,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403281024,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403281386,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403281857,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281865,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403281866,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281874,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281876,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403281883,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281892,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281895,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281896,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281897,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281925,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281927,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403281927,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403281946,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403281948,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403283117,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285106,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403285424,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285502,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285503,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285510,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403285511,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403285514,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285566,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285576,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285581,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285677,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285679,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285693,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403285806,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285808,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285858,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285912,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285912,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285913,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285915,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403285952,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403285958,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286058,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286107,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286110,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286112,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286189,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286189,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286190,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286197,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286197,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286198,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403286827,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288248,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288362,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288364,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403288365,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403288392,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288434,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288435,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288435,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288438,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288448,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288452,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288457,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288482,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288616,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288617,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403288619,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288620,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288633,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288637,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288749,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288808,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288811,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288814,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288816,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288817,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288846,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288847,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288847,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288848,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288848,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288850,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403288869,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288872,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288874,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288876,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403288876,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289101,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403289107,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289115,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289116,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289117,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289127,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289129,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289139,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403289146,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289150,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403289160,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289162,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289164,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289164,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289165,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289209,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403289232,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289236,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289237,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289239,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289239,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289240,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289241,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289242,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289259,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289264,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403289448,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289477,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289477,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289482,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289482,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289487,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403289531,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403289631,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403289665,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403289731,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290627,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290627,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290627,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290628,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290629,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290629,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290630,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290632,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290632,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290632,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403290784,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290789,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290790,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290791,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290791,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403290791,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294339,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403294340,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403294346,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403294346,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403294381,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294383,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294384,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403294384,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403294385,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294392,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294395,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294395,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294395,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294396,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294469,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294481,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294482,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294482,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294482,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294489,
+    "type": "api",
+    "class": "java.io.FileOutputStream",
+    "method": "write"
+  },
+  {
+    "timestamp": 1791403294549,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294551,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294559,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294559,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294560,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403294906,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403295729,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403297524,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403297532,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403297537,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403297542,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403297548,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403297553,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403297557,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403298982,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403299068,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403299132,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403299694,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403299710,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403299800,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403299854,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403300023,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403300024,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403300024,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403300979,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403301124,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403301153,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403301154,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403301156,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403301159,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403306339,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403306457,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403306458,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403306459,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403306461,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403306462,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403306464,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403306466,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403306468,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403306468,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403306469,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308560,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308563,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308564,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308620,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308622,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308628,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308637,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308640,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308697,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308698,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308699,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308701,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308702,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308703,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308706,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308708,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308709,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308710,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403308986,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308987,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403308988,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309027,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309028,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309028,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309162,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309220,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309230,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309232,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309235,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309236,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309239,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309243,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309244,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309245,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309253,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309254,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309256,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309257,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309258,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403309321,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403309492,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403309848,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403309854,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403310158,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403310274,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403310283,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403310287,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403310287,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403310288,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403315236,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403315432,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403315442,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403315446,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403315448,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403315448,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403318996,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403319158,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403319170,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403319971,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403320346,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403320350,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403320351,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403320352,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403320352,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403325404,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403329048,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403329136,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403329246,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403329919,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403330064,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403330073,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403330250,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403330250,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403330251,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403334054,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403334081,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403334083,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403334093,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403334108,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403334109,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403335118,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403335150,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403335152,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403335162,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403335164,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403335168,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403335270,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403338981,
+    "type": "api",
+    "class": "java.security.MessageDigest",
+    "method": "getInstance"
+  },
+  {
+    "timestamp": 1791403339102,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "bindService"
+  },
+  {
+    "timestamp": 1791403339172,
+    "type": "api",
+    "class": "android.content.ContextWrapper",
+    "method": "unbindService"
+  },
+  {
+    "timestamp": 1791403339888,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403340022,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403340024,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403340029,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403340030,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403340030,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403341450,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403341560,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403341573,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403341576,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403341578,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  },
+  {
+    "timestamp": 1791403341579,
+    "type": "api",
+    "class": "java.io.File",
+    "method": "exists"
+  }
+]
