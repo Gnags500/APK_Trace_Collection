@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 import subprocess
@@ -56,24 +55,30 @@ def extract_requested_permissions(package):
     collecting = False
 
     for line in output.splitlines():
-        line = line.strip()
+        stripped = line.strip()
 
-        if line.startswith("requested permissions:"):
+        if stripped.startswith("requested permissions:"):
             collecting = True
             continue
 
         if collecting:
-            if not line:
+            # Empty lines do not end the section — skip them.
+            if not stripped:
                 continue
 
-            if line.startswith("android.permission."):
-                permission = line.split(":", 1)[0]
-                permissions.add(permission)
+            # A new section header has no leading whitespace.
+            # That is the reliable signal that the permissions
+            # block has ended.
+            if not line.startswith(" ") and not line.startswith("\t"):
+                break
 
-            elif not line.startswith("android.permission."):
-                # The requested-permissions section has ended.
-                if permissions:
-                    break
+            # Collect every permission in the section, not just
+            # android.permission.* — apps also declare third-party
+            # permissions (com.google.*, com.android.vending.*, etc.)
+            # and those are valid features for DL-Droid.
+            permission = stripped.split(":")[0].strip()
+            if permission:
+                permissions.add(permission)
 
     return permissions
 
@@ -117,4 +122,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
