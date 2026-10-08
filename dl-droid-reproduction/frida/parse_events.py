@@ -290,6 +290,25 @@ def parse_file(input_file: Path, output_stem: Path):
         print("-" * 40)
         for cls, mth in sorted(unknown_apis):
             print(f"  {cls}->{mth}")
+            # ----------------------------------------------------------------
+    # Write full unique API call list to file
+    # ----------------------------------------------------------------
+        apis_out = Path(str(output_stem) + "_apis.txt")
+
+        all_unique_apis = sorted({
+            f"{e.get('class', '')}->{e.get('method', '')}"
+            for e in api_events
+        })
+
+        with open(apis_out, "w", encoding="utf-8") as f:
+            f.write(f"Total unique API calls: {len(all_unique_apis)}\n")
+            f.write("-" * 60 + "\n\n")
+            for api in all_unique_apis:
+                key = tuple(api.split("->", 1))
+                feature = API_FEATURE_MAP.get(key, "not in DL-Droid map")
+                f.write(f"{api}  [{feature}]\n")
+
+        print(f"API list     : {apis_out}")
 
 
 def main():
