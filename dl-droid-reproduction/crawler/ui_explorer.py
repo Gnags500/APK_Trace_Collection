@@ -1426,7 +1426,7 @@ def write_report():
 def main(argv=None):
     global d, TARGET, DEADLINE, MAX_DEPTH, MAX_STATES, MAX_MINUTES
     global OUT_JSON, SHOTS, LONG_CLICK, TEXT_INPUT, PICK_MEDIA
-
+    print("starting uiautomator2 UI explorer...")
     ap = argparse.ArgumentParser()
     ap.add_argument("package", nargs="?")
     ap.add_argument("--depth", type=int, default=MAX_DEPTH)
