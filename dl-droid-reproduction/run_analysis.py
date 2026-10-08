@@ -275,97 +275,7 @@ def start_frida_server():
     print("Starting Frida server")
     print("=" * 70)
 
-    # ---------------------------------------------------------
-    # Step 1: Make sure ADB is running as root
-    # ---------------------------------------------------------
-    print("[*] Requesting ADB root...")
-
-    result = subprocess.run(
-        ["adb", "root"],
-        capture_output=True,
-        text=True,
-    )
-
-    if result.stdout.strip():
-        print(result.stdout.strip())
-
-    if result.stderr.strip():
-        print(result.stderr.strip())
-
-    # adb restarts after "adb root"
-    print("[*] Waiting for ADB after root restart...")
-    subprocess.run(
-        ["adb", "wait-for-device"],
-        check=True,
-    )
-
-    # Verify root
-    result = subprocess.run(
-        ["adb", "shell", "id"],
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-
-    if "uid=0(root)" not in result.stdout:
-        raise RuntimeError(
-            "ADB is not running as root:\n"
-            + result.stdout
-        )
-
-    print("[+] ADB root access confirmed.")
-
-    # ---------------------------------------------------------
-    # Step 2: SELinux
-    # ---------------------------------------------------------
-    result = subprocess.run(
-        ["adb", "shell", "getenforce"],
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-
-    selinux_mode = result.stdout.strip()
-    print(f"[*] SELinux mode: {selinux_mode}")
-
-    if selinux_mode == "Enforcing":
-        print("[*] Setting SELinux to permissive...")
-
-        result = subprocess.run(
-            ["adb", "shell", "setenforce", "0"],
-            capture_output=True,
-            text=True,
-        )
-
-        if result.returncode != 0:
-            raise RuntimeError(
-                "Failed to set SELinux to permissive:\n"
-                + result.stderr
-            )
-
-        result = subprocess.run(
-            ["adb", "shell", "getenforce"],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-
-        if result.stdout.strip() != "Permissive":
-            raise RuntimeError(
-                "SELinux could not be changed to Permissive."
-            )
-
-        print("[+] SELinux is now permissive.")
-
-    elif selinux_mode == "Permissive":
-        print("[+] SELinux is already permissive.")
-
-    else:
-        print(f"[!] Unexpected SELinux mode: {selinux_mode}")
-
-    # ---------------------------------------------------------
-    # Step 3: Check frida-server binary
-    # ---------------------------------------------------------
+    # Check that frida-server exists and is executable
     print("[*] Checking frida-server binary...")
 
     result = subprocess.run(
@@ -381,9 +291,7 @@ def start_frida_server():
 
     print("[+] frida-server binary found.")
 
-    # ---------------------------------------------------------
-    # Step 4: Stop old frida-server
-    # ---------------------------------------------------------
+    # Stop an old instance if one exists
     print("[*] Stopping any existing frida-server...")
 
     subprocess.run(
@@ -394,31 +302,23 @@ def start_frida_server():
 
     time.sleep(1)
 
-    # ---------------------------------------------------------
-    # Step 5: Start frida-server
-    # ---------------------------------------------------------
+    # Start server in Android background
     print("[*] Starting frida-server...")
 
     subprocess.run(
         [
             "adb",
             "shell",
-            "nohup",
-            server,
-            ">",
-            "/dev/null",
-            "2>&1",
-            "&",
+            "sh",
+            "-c",
+            f"'{server}' >/dev/null 2>&1 &",
         ],
-        capture_output=True,
-        text=True,
+        check=True,
     )
 
     time.sleep(2)
 
-    # ---------------------------------------------------------
-    # Step 6: Verify server process
-    # ---------------------------------------------------------
+    # Verify process
     result = subprocess.run(
         ["adb", "shell", "pidof", "frida-server"],
         capture_output=True,
@@ -428,15 +328,11 @@ def start_frida_server():
     pid = result.stdout.strip()
 
     if not pid:
-        raise RuntimeError(
-            "frida-server failed to start."
-        )
+        raise RuntimeError("frida-server failed to start.")
 
     print(f"[+] frida-server running. PID: {pid}")
 
-    # ---------------------------------------------------------
-    # Step 7: Verify actual Frida connection
-    # ---------------------------------------------------------
+    # Verify actual Frida connection
     print("[*] Testing Frida client connection...")
 
     frida_ps = FRIDA_ENV / "bin" / "frida-ps"
@@ -449,13 +345,12 @@ def start_frida_server():
 
     if result.returncode != 0:
         raise RuntimeError(
-            "frida-server is running, but the Frida client "
+            "frida-server is running, but Frida client "
             "cannot connect:\n"
             + result.stderr
         )
 
     print("[+] Frida connection successful.")
-
 
 def setup_selinux():
     print("[*] Checking SELinux...")
@@ -941,6 +836,8 @@ def main():
         wait_for_android_ready()
 
         #check_frida()
+        setup_adb_root()
+        setup_selinux()
         start_frida_server()
 
 

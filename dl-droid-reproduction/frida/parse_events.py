@@ -48,6 +48,20 @@ API_FEATURE_MAP = {
         "SimSerialNumber",
 
     # ------------------------------------------------------------------
+    # Telephony — device identity (modern, API 26+)
+    # getDeviceId() deprecated API 26, removed API 29; apps now use
+    # getImei()/getMeid() or Build.getSerial(). Same DL-Droid feature.
+    # ------------------------------------------------------------------
+    ("android.telephony.TelephonyManager", "getImei"):
+        "deviceId",
+    ("android.telephony.TelephonyManager", "getMeid"):
+        "deviceId",
+    ("android.telephony.TelephonyManager", "createForSubscriptionId"):
+        "deviceId",
+    ("android.os.Build", "getSerial"):
+        "deviceId",
+
+    # ------------------------------------------------------------------
     # Telephony — operator / SIM info
     # ------------------------------------------------------------------
     ("android.telephony.TelephonyManager", "getNetworkOperatorName"):
@@ -68,6 +82,17 @@ API_FEATURE_MAP = {
         "getState",
 
     # ------------------------------------------------------------------
+    # Network — modern ConnectivityManager (API 29+)
+    # NetworkInfo.getState() deprecated API 29; same DL-Droid feature.
+    # ------------------------------------------------------------------
+    ("android.net.ConnectivityManager", "getNetworkCapabilities"):
+        "getState",
+    ("android.net.ConnectivityManager", "registerNetworkCallback"):
+        "getState",
+    ("android.net.ConnectivityManager", "getActiveNetworkInfo"):
+        "getState",
+
+    # ------------------------------------------------------------------
     # Network — connection / URI
     # ------------------------------------------------------------------
     ("java.net.URL", "openConnection"):
@@ -84,6 +109,18 @@ API_FEATURE_MAP = {
         "checkPermission",
     ("android.content.pm.PackageManager", "getApplicationInfo"):
         "getApplicationInfo",
+
+    # ------------------------------------------------------------------
+    # Permission checks — modern path
+    # Many apps use Context.checkSelfPermission() rather than
+    # PackageManager.checkPermission(). Same DL-Droid feature.
+    # ------------------------------------------------------------------
+    ("android.content.Context", "checkSelfPermission"):
+        "checkPermission",
+    ("android.content.Context", "checkCallingPermission"):
+        "checkPermission",
+    ("android.content.ContextWrapper", "checkSelfPermission"):
+        "checkPermission",
 
     # ------------------------------------------------------------------
     # Context — service binding

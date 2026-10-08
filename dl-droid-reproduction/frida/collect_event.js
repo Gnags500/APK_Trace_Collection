@@ -4,9 +4,9 @@
  * DL-Droid API event collector — full API call feature set.
  *
  * Covers every API-call feature from DynaLog / DL-Droid:
- *   - Telephony (device identity + operator info)
- *   - Network / Wi-Fi
- *   - Package manager
+ *   - Telephony (device identity — legacy + modern API 26+ paths)
+ *   - Network / Wi-Fi (legacy NetworkInfo + modern ConnectivityManager)
+ *   - Package manager + Context permission checks
  *   - Context (service binding)
  *   - Process execution (Runtime.exec, ProcessBuilder)
  *   - Reflection (Class.getMethod, Object.getClass)
@@ -88,6 +88,20 @@ Java.perform(function () {
     hookMethod('android.telephony.TelephonyManager', 'getSimSerialNumber');
 
     // ================================================================
+    // TELEPHONY — device identity (modern, API 26+)
+    //
+    // getDeviceId() was deprecated in API 26 and removed in API 29.
+    // Apps targeting Android 10+ use getImei()/getMeid() instead, or
+    // go through Build.getSerial() / createForSubscriptionId().
+    // All four map to the same DL-Droid 'deviceId' feature.
+    // ================================================================
+
+    hookMethod('android.telephony.TelephonyManager', 'getImei');
+    hookMethod('android.telephony.TelephonyManager', 'getMeid');
+    hookMethod('android.telephony.TelephonyManager', 'createForSubscriptionId');
+    hookMethod('android.os.Build',                   'getSerial');
+
+    // ================================================================
     // TELEPHONY — operator / SIM info
     // DL-Droid features: NetworkOperator, SimOperator,
     //                    SimCountryIso, SimOperatorNumber
@@ -107,6 +121,17 @@ Java.perform(function () {
     hookMethod('android.net.NetworkInfo',       'getState');
 
     // ================================================================
+    // NETWORK — modern connectivity (API 29+)
+    //
+    // NetworkInfo.getState() is deprecated since API 29. Apps now use
+    // ConnectivityManager. All three map to the 'getState' feature.
+    // ================================================================
+
+    hookMethod('android.net.ConnectivityManager', 'getNetworkCapabilities');
+    hookMethod('android.net.ConnectivityManager', 'registerNetworkCallback');
+    hookMethod('android.net.ConnectivityManager', 'getActiveNetworkInfo');
+
+    // ================================================================
     // NETWORK — connection / URL
     // DL-Droid features: connect, parse (Uri)
     // ================================================================
@@ -122,6 +147,19 @@ Java.perform(function () {
 
     hookMethod('android.content.pm.PackageManager', 'checkPermission');
     hookMethod('android.content.pm.PackageManager', 'getApplicationInfo');
+
+    // ================================================================
+    // PERMISSION CHECKS — modern path
+    //
+    // Many apps call Context.checkSelfPermission() or
+    // ContextCompat.checkSelfPermission() rather than
+    // PackageManager.checkPermission() directly. All map to
+    // the 'checkPermission' feature.
+    // ================================================================
+
+    hookMethod('android.content.Context',        'checkSelfPermission');
+    hookMethod('android.content.Context',        'checkCallingPermission');
+    hookMethod('android.content.ContextWrapper', 'checkSelfPermission');
 
     // ================================================================
     // CONTEXT — service binding
