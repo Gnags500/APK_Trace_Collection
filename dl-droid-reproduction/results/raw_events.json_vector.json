@@ -5,7 +5,7 @@
   "Process": 0,
   "SecretKey": 0,
   "SimCountryIso": 0,
-  "SimOperator": 0,
+  "SimOperator": 1,
   "SimOperatorNumber": 0,
   "SimSerialNumber": 0,
   "SubscriberId": 0,
