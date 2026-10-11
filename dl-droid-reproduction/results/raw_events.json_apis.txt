@@ -1,0 +1,21 @@
+Total unique API calls: 18
+------------------------------------------------------------
+
+android.content.ContentResolver->delete  [ContentResolver]
+android.content.ContentResolver->query  [ContentResolver]
+android.content.ContextWrapper->bindService  [bindService]
+android.content.ContextWrapper->unbindService  [unbindService]
+android.net.ConnectivityManager->getActiveNetworkInfo  [getState]
+android.net.ConnectivityManager->getNetworkCapabilities  [getState]
+android.net.ConnectivityManager->registerNetworkCallback  [getState]
+android.net.Uri->parse  [parse]
+android.telephony.TelephonyManager->getSimOperator  [SimOperator]
+java.io.File->exists  [fileExists]
+java.io.FileOutputStream->write  [fileWrite]
+java.lang.Class->getDeclaredMethod  [getMethod]
+java.lang.Class->getMethod  [getMethod]
+java.net.URL->openConnection  [connect]
+java.security.MessageDigest->digest  [digest]
+java.security.MessageDigest->getInstance  [getInstance]
+javax.crypto.Cipher->getInstance  [getInstance]
+javax.crypto.Cipher->init  [initCipher]

@@ -191,7 +191,9 @@ Java.perform(function () {
 
     hookMethod('java.lang.Class',   'getMethod');
     hookMethod('java.lang.Class',   'getDeclaredMethod');
-    hookMethod('java.lang.Object',  'getClass');
+    // java.lang.Object->getClass is intentionally NOT hooked.
+    // It is called by the JVM itself on virtually every operation,
+    // flooding the log with 98%+ noise and making output unusable.
 
     // ================================================================
     // CRYPTOGRAPHY
@@ -263,6 +265,111 @@ Java.perform(function () {
 
     hookMethod('android.telephony.SmsManager', 'sendTextMessage');
     hookMethod('android.telephony.SmsManager', 'sendMultipartTextMessage');
+
+    // ================================================================
+    // INTENT / BROADCAST EVENTS
+    // DL-Droid features: 23 broadcast intent actions
+    //
+    // Hook 1 — registerReceiver: catches what the app REGISTERS to
+    //           listen for, even if the broadcast never fires.
+    // Hook 2 — onReceive: catches what was actually DELIVERED.
+    // Both are needed — registration alone proves intent, delivery
+    // proves execution.
+    // ================================================================
+
+    // The 23 DL-Droid intent actions we care about.
+    var TRACKED_ACTIONS = [
+        'android.provider.Telephony.SMS_RECEIVED',
+        'android.intent.action.NEW_OUTGOING_CALL',
+        'android.intent.action.PHONE_STATE',
+        'android.intent.action.BOOT_COMPLETED',
+        'android.intent.action.USER_PRESENT',
+        'android.net.conn.CONNECTIVITY_CHANGE',
+        'android.intent.action.PACKAGE_ADDED',
+        'android.intent.action.PACKAGE_REMOVED',
+        'android.intent.action.PACKAGE_REPLACED',
+        'android.intent.action.PACKAGE_CHANGED',
+        'android.intent.action.PACKAGE_RESTARTED',
+        'android.intent.action.PACKAGE_INSTALL',
+        'android.intent.action.ACTION_POWER_CONNECTED',
+        'android.intent.action.ACTION_POWER_DISCONNECTED',
+        'android.intent.action.BATTERY_LOW',
+        'android.intent.action.BATTERY_OKAY',
+        'android.intent.action.BATTERY_CHANGED',
+        'android.intent.action.UMS_CONNECTED',
+        'android.intent.action.UMS_DISCONNECTED',
+        'android.intent.action.SIM_FULL',
+        'android.intent.action.SIG_STR',
+        'android.intent.action.INPUT_METHOD_CHANGED',
+        'android.intent.action.MAIN',
+    ];
+
+    var ACTION_SET = {};
+    for (var i = 0; i < TRACKED_ACTIONS.length; i++) {
+        ACTION_SET[TRACKED_ACTIONS[i]] = true;
+    }
+
+    // ----------------------------------------------------------------
+    // Hook 1 — Context.registerReceiver()
+    // Fires when the app registers a broadcast receiver at runtime.
+    // Extract each action from the IntentFilter argument.
+    // ----------------------------------------------------------------
+    try {
+        var ContextWrapper = Java.use('android.content.ContextWrapper');
+        var registerOverloads = ContextWrapper.registerReceiver.overloads;
+
+        for (var r = 0; r < registerOverloads.length; r++) {
+            (function (overload) {
+                overload.implementation = function () {
+                    // IntentFilter is always the second argument
+                    var filter = arguments[1];
+                    if (filter !== null) {
+                        try {
+                            var count = filter.countActions();
+                            for (var a = 0; a < count; a++) {
+                                var action = filter.getAction(a);
+                                if (action && ACTION_SET[action]) {
+                                    emit('intent_registered', { action: action });
+                                }
+                            }
+                        } catch (ex) {
+                            // filter iteration failed — skip
+                        }
+                    }
+                    return overload.call(this, ...arguments);
+                };
+            })(registerOverloads[r]);
+        }
+        console.log('[+] Hooked ContextWrapper->registerReceiver');
+    } catch (e) {
+        console.log('[-] Could not hook registerReceiver: ' + e);
+    }
+
+    // ----------------------------------------------------------------
+    // Hook 2 — BroadcastReceiver.onReceive()
+    // Fires when a broadcast is actually delivered to the app.
+    // Extract the action from the Intent argument.
+    // ----------------------------------------------------------------
+    try {
+        var BroadcastReceiver = Java.use('android.content.BroadcastReceiver');
+
+        BroadcastReceiver.onReceive.implementation = function (context, intent) {
+            if (intent !== null) {
+                try {
+                    var action = intent.getAction();
+                    if (action && ACTION_SET[action]) {
+                        emit('intent_received', { action: action });
+                    }
+                } catch (ex) {
+                    // intent.getAction() failed — skip
+                }
+            }
+            return this.onReceive(context, intent);
+        };
+        console.log('[+] Hooked BroadcastReceiver->onReceive');
+    } catch (e) {
+        console.log('[-] Could not hook BroadcastReceiver->onReceive: ' + e);
+    }
 
     console.log('[+] DL-Droid full API collector initialisation complete');
 });

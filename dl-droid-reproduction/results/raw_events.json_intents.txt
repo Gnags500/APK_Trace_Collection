@@ -1,0 +1,11 @@
+Total unique intent actions: 2
+------------------------------------------------------------
+
+android.intent.action.BATTERY_CHANGED
+  feature   : action.BATTERY_CHANGED
+  registered: 12  received: 0
+
+android.intent.action.USER_PRESENT
+  feature   : action.USER_PRESENT
+  registered: 4  received: 0
+

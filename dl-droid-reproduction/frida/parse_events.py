@@ -216,6 +216,43 @@ API_FEATURE_MAP = {
 # All unique DL-Droid API feature names (the columns of our vector).
 ALL_API_FEATURES = sorted(set(API_FEATURE_MAP.values()))
 
+# -----------------------------------------------------------------------
+# DL-Droid Intent feature map
+#
+# Maps broadcast action string -> canonical DL-Droid feature name.
+# Covers both intent_registered and intent_received event types.
+# A feature is marked 1 if the app either registered for the action
+# OR actually received it during the analysis window.
+# -----------------------------------------------------------------------
+
+INTENT_FEATURE_MAP = {
+    'android.provider.Telephony.SMS_RECEIVED':          'action.SMS_RECEIVED',
+    'android.intent.action.NEW_OUTGOING_CALL':          'action.NEW_OUTGOING_CALL',
+    'android.intent.action.PHONE_STATE':                'action.PHONE_STATE',
+    'android.intent.action.BOOT_COMPLETED':             'action.BOOT_COMPLETED',
+    'android.intent.action.USER_PRESENT':               'action.USER_PRESENT',
+    'android.net.conn.CONNECTIVITY_CHANGE':             'action.CONNECTIVITY_CHANGE',
+    'android.intent.action.PACKAGE_ADDED':              'action.PACKAGE_ADDED',
+    'android.intent.action.PACKAGE_REMOVED':            'action.PACKAGE_REMOVED',
+    'android.intent.action.PACKAGE_REPLACED':           'action.PACKAGE_REPLACED',
+    'android.intent.action.PACKAGE_CHANGED':            'action.PACKAGE_CHANGED',
+    'android.intent.action.PACKAGE_RESTARTED':          'action.PACKAGE_RESTARTED',
+    'android.intent.action.PACKAGE_INSTALL':            'action.PACKAGE_INSTALL',
+    'android.intent.action.ACTION_POWER_CONNECTED':     'action.POWER_CONNECTED',
+    'android.intent.action.ACTION_POWER_DISCONNECTED':  'action.POWER_DISCONNECTED',
+    'android.intent.action.BATTERY_LOW':                'action.BATTERY_LOW',
+    'android.intent.action.BATTERY_OKAY':               'action.BATTERY_OKAY',
+    'android.intent.action.BATTERY_CHANGED':            'action.BATTERY_CHANGED',
+    'android.intent.action.UMS_CONNECTED':              'action.UMS_CONNECTED',
+    'android.intent.action.UMS_DISCONNECTED':           'action.UMS_DISCONNECTED',
+    'android.intent.action.SIM_FULL':                   'action.SIM_FULL',
+    'android.intent.action.SIG_STR':                    'action.SIG_STR',
+    'android.intent.action.INPUT_METHOD_CHANGED':       'action.INPUT_METHOD_CHANGED',
+    'android.intent.action.MAIN':                       'action.ACTION_MAIN',
+}
+
+ALL_INTENT_FEATURES = sorted(set(INTENT_FEATURE_MAP.values()))
+
 
 def parse_file(input_file: Path, output_stem: Path):
 
@@ -259,9 +296,30 @@ def parse_file(input_file: Path, output_stem: Path):
     vector = {feature: int(feature in observed_features)
               for feature in ALL_API_FEATURES}
 
+    # ----------------------------------------------------------------
+    # Build intent feature vector
+    # ----------------------------------------------------------------
+    intent_events = [
+        e for e in events
+        if e.get("type") in ("intent_registered", "intent_received")
+    ]
+
+    observed_intents: set[str] = set()
+
+    for e in intent_events:
+        action = e.get("action", "")
+        if action in INTENT_FEATURE_MAP:
+            observed_intents.add(INTENT_FEATURE_MAP[action])
+
+    intent_vector = {feature: int(feature in observed_intents)
+                     for feature in ALL_INTENT_FEATURES}
+
+    # Merge API + intent into one combined vector
+    combined_vector = {**vector, **intent_vector}
+
     vec_out = Path(str(output_stem) + "_vector.json")
     with open(vec_out, "w", encoding="utf-8") as f:
-        json.dump(vector, f, indent=2)
+        json.dump(combined_vector, f, indent=2)
 
     # ----------------------------------------------------------------
     # Summary
@@ -273,14 +331,23 @@ def parse_file(input_file: Path, output_stem: Path):
     print(f"Raw events   : {raw_out}  ({len(events)} events)")
     print(f"Feature vec  : {vec_out}")
     print()
-    print(f"Total events : {len(events)}")
-    print(f"API events   : {len(api_events)}")
-    print(f"Features hit : {len(observed_features)} / {len(ALL_API_FEATURES)}")
+    print(f"Total events   : {len(events)}")
+    print(f"API events     : {len(api_events)}")
+    print(f"Intent events  : {len(intent_events)}")
+    print(f"API features   : {len(observed_features)} / {len(ALL_API_FEATURES)}")
+    print(f"Intent features: {len(observed_intents)} / {len(ALL_INTENT_FEATURES)}")
     print()
 
-    print("FEATURE VECTOR")
+    print("API FEATURE VECTOR")
     print("-" * 40)
     for feature, value in sorted(vector.items()):
+        mark = "✓" if value else " "
+        print(f"  [{mark}] {feature}")
+
+    print()
+    print("INTENT FEATURE VECTOR")
+    print("-" * 40)
+    for feature, value in sorted(intent_vector.items()):
         mark = "✓" if value else " "
         print(f"  [{mark}] {feature}")
 
@@ -290,25 +357,55 @@ def parse_file(input_file: Path, output_stem: Path):
         print("-" * 40)
         for cls, mth in sorted(unknown_apis):
             print(f"  {cls}->{mth}")
-            # ----------------------------------------------------------------
+
+    # ----------------------------------------------------------------
     # Write full unique API call list to file
     # ----------------------------------------------------------------
-        apis_out = Path(str(output_stem) + "_apis.txt")
+    apis_out = Path(str(output_stem) + "_apis.txt")
 
-        all_unique_apis = sorted({
-            f"{e.get('class', '')}->{e.get('method', '')}"
-            for e in api_events
-        })
+    all_unique_apis = sorted({
+        f"{e.get('class', '')}->{e.get('method', '')}"
+        for e in api_events
+    })
 
-        with open(apis_out, "w", encoding="utf-8") as f:
-            f.write(f"Total unique API calls: {len(all_unique_apis)}\n")
-            f.write("-" * 60 + "\n\n")
-            for api in all_unique_apis:
-                key = tuple(api.split("->", 1))
-                feature = API_FEATURE_MAP.get(key, "not in DL-Droid map")
-                f.write(f"{api}  [{feature}]\n")
+    with open(apis_out, "w", encoding="utf-8") as f:
+        f.write(f"Total unique API calls: {len(all_unique_apis)}\n")
+        f.write("-" * 60 + "\n\n")
+        for api in all_unique_apis:
+            key = tuple(api.split("->", 1))
+            feature = API_FEATURE_MAP.get(key, "not in DL-Droid map")
+            f.write(f"{api}  [{feature}]\n")
 
-        print(f"API list     : {apis_out}")
+    print(f"API list     : {apis_out}")
+
+    # ----------------------------------------------------------------
+    # Write intent event list to file
+    # ----------------------------------------------------------------
+    intents_out = Path(str(output_stem) + "_intents.txt")
+
+    all_unique_intents = sorted({
+        e.get("action", "")
+        for e in intent_events
+        if e.get("action", "")
+    })
+
+    with open(intents_out, "w", encoding="utf-8") as f:
+        f.write(f"Total unique intent actions: {len(all_unique_intents)}\n")
+        f.write("-" * 60 + "\n\n")
+        for action in all_unique_intents:
+            feature  = INTENT_FEATURE_MAP.get(action, "not in DL-Droid map")
+            # show which events fired for this action
+            reg  = sum(1 for e in intent_events
+                       if e.get("action") == action
+                       and e.get("type") == "intent_registered")
+            recv = sum(1 for e in intent_events
+                       if e.get("action") == action
+                       and e.get("type") == "intent_received")
+            f.write(f"{action}\n")
+            f.write(f"  feature   : {feature}\n")
+            f.write(f"  registered: {reg}  received: {recv}\n\n")
+
+    print(f"Intent list  : {intents_out}")
 
 
 def main():
